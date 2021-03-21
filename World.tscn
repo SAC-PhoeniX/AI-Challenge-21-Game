@@ -121,58 +121,45 @@ rotation = 3.14159
 [node name="ContainerB" parent="AreaContainers" instance=ExtResource( 6 )]
 position = Vector2( 623.754, 50.5306 )
 rotation = 1.5708
-scale = Vector2( 1, 1 )
 
 [node name="ContainerB2" parent="AreaContainers" instance=ExtResource( 6 )]
 position = Vector2( 623.754, 176.782 )
 rotation = 1.5708
-scale = Vector2( 1, 1 )
 
 [node name="ContainerB3" parent="AreaContainers" instance=ExtResource( 6 )]
 position = Vector2( 411.312, 381.94 )
-scale = Vector2( 1, 1 )
 
 [node name="ContainerB6" parent="AreaContainers" instance=ExtResource( 6 )]
 position = Vector2( 655.316, 380.726 )
-scale = Vector2( 1, 1 )
 
 [node name="ContainerB4" parent="AreaContainers" instance=ExtResource( 6 )]
 position = Vector2( 78.688, 145.219 )
-scale = Vector2( 1, 1 )
 
 [node name="ContainerB5" parent="AreaContainers" instance=ExtResource( 6 )]
 position = Vector2( 200.083, 145.219 )
-scale = Vector2( 1, 1 )
 
 [node name="ContainerC" parent="AreaContainers" instance=ExtResource( 4 )]
 position = Vector2( 902.296, 276.023 )
 rotation = 0.785398
-scale = Vector2( 1, 1 )
 
 [node name="ContainerC2" parent="AreaContainers" instance=ExtResource( 4 )]
 position = Vector2( 284.607, 180.12 )
 rotation = 0.785398
-scale = Vector2( 1, 1 )
 
 [node name="ContainerC3" parent="AreaContainers" instance=ExtResource( 4 )]
 position = Vector2( 539.538, 575.87 )
 rotation = 1.5708
-scale = Vector2( 1, 1 )
 
 [node name="ContainerD" parent="AreaContainers" instance=ExtResource( 2 )]
 position = Vector2( 949.824, 483.23 )
-scale = Vector2( 1, 1 )
 
 [node name="ContainerD3" parent="AreaContainers" instance=ExtResource( 2 )]
 position = Vector2( 215.382, 536.644 )
 rotation = 1.5708
-scale = Vector2( 1, 1 )
 
 [node name="ContainerD4" parent="AreaContainers" instance=ExtResource( 2 )]
 position = Vector2( 215.382, 410.392 )
 rotation = 1.5708
-scale = Vector2( 1, 1 )
 
 [node name="ContainerD2" parent="AreaContainers" instance=ExtResource( 2 )]
 position = Vector2( 951.038, 329.057 )
-scale = Vector2( 1, 1 )
