@@ -21,4 +21,4 @@ scale = Vector2( 0.3, 0.3 )
 shape = SubResource( 1 )
 
 [node name="Muzzle" type="Node2D" parent="."]
-position = Vector2( 39.3049, 0.00704288 )
+position = Vector2( 42.6451, 0.00704288 )

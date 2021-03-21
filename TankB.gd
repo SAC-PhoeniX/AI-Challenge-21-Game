@@ -12,22 +12,22 @@ export var fire_delay = 2
 var projectile = load("res://Projectile.tscn")
 var can_fire = true
 
-var pos_x = 100
+var pos_x = 1150
 var pos1_y = 200
 var pos2_y = 620
 
 func get_input():
 	rotation_dir = 0
 	velocity = Vector2()
-	if Input.is_action_pressed('ui_right'):
+	if Input.is_action_pressed('d'):
 		rotation_dir += 1
-	if Input.is_action_pressed('ui_left'):
+	if Input.is_action_pressed('a'):
 		rotation_dir -= 1
-	if Input.is_action_pressed('ui_down'):
+	if Input.is_action_pressed('s'):
 		velocity = Vector2(-speed, 0).rotated(rotation)
-	if Input.is_action_pressed('ui_up'):
+	if Input.is_action_pressed('w'):
 		velocity = Vector2(speed, 0).rotated(rotation)
-	if Input.is_action_pressed("ui_select") and can_fire:
+	if Input.is_action_pressed("q") and can_fire:
 		shoot()
 		can_fire = false
 		yield(get_tree().create_timer(fire_delay), "timeout")
@@ -40,6 +40,7 @@ func _process(delta):
 	
 	for i in get_slide_count():
 		var collision = get_slide_collision(i)
+		print("Tank B collided with ", collision.collider.name)
 		if "Projectile" in collision.collider.name:
 			for child in get_tree().get_root().get_children():
 				if "Projectile" in child.name:
