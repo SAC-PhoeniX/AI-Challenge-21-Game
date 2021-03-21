@@ -7,4 +7,5 @@ func _ready():
 
 
 func _process(delta):
-	pass
+	yield(get_tree().create_timer(6), "timeout")
+	queue_free()

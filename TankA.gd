@@ -7,7 +7,7 @@ var velocity = Vector2()
 var rotation_dir = 0
 
 export var bullet_speed = 400
-export var fire_delay = 1.2
+export var fire_delay = 2
 
 var projectile = load("res://Projectile.tscn")
 var can_fire = true
