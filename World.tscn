@@ -210,7 +210,7 @@ position = Vector2( 631.981, 36.373 )
 scale = Vector2( 1.21293, 0.446459 )
 texture = ExtResource( 9 )
 
-[node name="team1score" type="Label" parent="."]
+[node name="teamAscore" type="Label" parent="."]
 margin_left = 100.691
 margin_right = 167.691
 margin_bottom = 61.0
@@ -224,7 +224,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="team1score2" type="Label" parent="."]
+[node name="teamAname" type="Label" parent="."]
 margin_left = 168.0
 margin_right = 354.0
 margin_bottom = 61.0
@@ -237,7 +237,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="team1score3" type="Label" parent="."]
+[node name="teamBname" type="Label" parent="."]
 margin_left = 891.782
 margin_top = -0.436493
 margin_right = 1077.78
@@ -252,7 +252,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="team2score" type="Label" parent="."]
+[node name="teamBscore" type="Label" parent="."]
 margin_left = 1082.33
 margin_right = 1149.33
 margin_bottom = 61.0

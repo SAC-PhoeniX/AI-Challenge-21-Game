@@ -11,6 +11,7 @@ export var fire_delay = 2
 
 var projectile = load("res://Projectile.tscn")
 var can_fire = true
+var can_score = true
 
 var pos_x = 100
 var pos1_y = 200
@@ -49,6 +50,8 @@ func _process(delta):
 						m_child.set_global_position(Vector2(100, 200))
 					if "TankB" in m_child.name:
 						m_child.set_global_position(Vector2(1150, 200))
+					if "teamBscore" in m_child.name:
+						m_child.text = str(int(m_child.text)+1)
 
 func shoot():
 	var bullet = projectile.instance()

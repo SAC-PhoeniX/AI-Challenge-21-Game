@@ -40,7 +40,6 @@ func _process(delta):
 	
 	for i in get_slide_count():
 		var collision = get_slide_collision(i)
-		print("Tank B collided with ", collision.collider.name)
 		if "Projectile" in collision.collider.name:
 			for child in get_tree().get_root().get_children():
 				if "Projectile" in child.name:
@@ -50,6 +49,9 @@ func _process(delta):
 						m_child.set_global_position(Vector2(100, 200))
 					if "TankB" in m_child.name:
 						m_child.set_global_position(Vector2(1150, 200))
+					if "teamAscore" in m_child.name:
+						m_child.text = str(int(m_child.text)+1)
+
 
 func shoot():
 	var bullet = projectile.instance()
