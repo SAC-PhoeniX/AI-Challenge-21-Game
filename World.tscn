@@ -1,0 +1,178 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://tileset3.png" type="Texture" id=1]
+[ext_resource path="res://ContainerD.tscn" type="PackedScene" id=2]
+[ext_resource path="res://TankB.tscn" type="PackedScene" id=3]
+[ext_resource path="res://ContainerC.tscn" type="PackedScene" id=4]
+[ext_resource path="res://ContainerA.tscn" type="PackedScene" id=5]
+[ext_resource path="res://ContainerB.tscn" type="PackedScene" id=6]
+[ext_resource path="res://TankA.tscn" type="PackedScene" id=7]
+
+[node name="World" type="Node2D"]
+
+[node name="ground" type="Sprite" parent="."]
+position = Vector2( 355.347, 320 )
+scale = Vector2( 0.371346, 0.371346 )
+texture = ExtResource( 1 )
+
+[node name="ground2" type="Sprite" parent="ground"]
+position = Vector2( 2077.99, 6.10352e-05 )
+texture = ExtResource( 1 )
+
+[node name="SideContainers" type="Node2D" parent="."]
+
+[node name="ContainerA2" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( 64, -13 )
+
+[node name="ContainerA3" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( 191, -13 )
+
+[node name="ContainerA4" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( 317.57, -13 )
+
+[node name="ContainerA5" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( 444.57, -13 )
+
+[node name="ContainerA6" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( 572.215, -13 )
+
+[node name="ContainerA7" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( 699.215, -13 )
+
+[node name="ContainerA8" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( 825.785, -13 )
+
+[node name="ContainerA9" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( 952.785, -13 )
+
+[node name="ContainerA10" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( 64, 613.956 )
+
+[node name="ContainerA11" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( 191, 613.956 )
+
+[node name="ContainerA12" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( 317.57, 613.956 )
+
+[node name="ContainerA13" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( 444.57, 613.956 )
+
+[node name="ContainerA14" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( 572.215, 613.956 )
+
+[node name="ContainerA15" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( 699.215, 613.956 )
+
+[node name="ContainerA16" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( 825.785, 613.956 )
+
+[node name="ContainerA17" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( 952.785, 613.956 )
+
+[node name="ContainerA18" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( 1040.59, 549.956 )
+rotation = 1.5708
+
+[node name="ContainerA19" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( 1040.65, 423.365 )
+rotation = 1.5708
+
+[node name="ContainerA20" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( 1041.04, 296.292 )
+rotation = 1.5708
+
+[node name="ContainerA21" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( 1041.1, 169.7 )
+rotation = 1.5708
+
+[node name="ContainerA22" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( 1041.1, 43.1318 )
+rotation = 1.5708
+
+[node name="ContainerA23" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( -12.0413, 547.127 )
+rotation = 1.5708
+
+[node name="ContainerA24" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( -11.9749, 420.535 )
+rotation = 1.5708
+
+[node name="ContainerA25" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( -11.5896, 293.462 )
+rotation = 1.5708
+
+[node name="ContainerA26" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( -11.5232, 166.871 )
+rotation = 1.5708
+
+[node name="ContainerA27" parent="SideContainers" instance=ExtResource( 5 )]
+position = Vector2( -11.5232, 40.3021 )
+rotation = 1.5708
+
+[node name="TankA" parent="." instance=ExtResource( 7 )]
+position = Vector2( 99.6698, 488.778 )
+
+[node name="TankB" parent="." instance=ExtResource( 3 )]
+position = Vector2( 924.502, 111.881 )
+rotation = 3.14159
+
+[node name="AreaContainers" type="Node2D" parent="."]
+
+[node name="ContainerB" parent="AreaContainers" instance=ExtResource( 6 )]
+position = Vector2( 623.754, 50.5306 )
+rotation = 1.5708
+scale = Vector2( 1, 1 )
+
+[node name="ContainerB2" parent="AreaContainers" instance=ExtResource( 6 )]
+position = Vector2( 623.754, 176.782 )
+rotation = 1.5708
+scale = Vector2( 1, 1 )
+
+[node name="ContainerB3" parent="AreaContainers" instance=ExtResource( 6 )]
+position = Vector2( 411.312, 381.94 )
+scale = Vector2( 1, 1 )
+
+[node name="ContainerB6" parent="AreaContainers" instance=ExtResource( 6 )]
+position = Vector2( 655.316, 380.726 )
+scale = Vector2( 1, 1 )
+
+[node name="ContainerB4" parent="AreaContainers" instance=ExtResource( 6 )]
+position = Vector2( 78.688, 145.219 )
+scale = Vector2( 1, 1 )
+
+[node name="ContainerB5" parent="AreaContainers" instance=ExtResource( 6 )]
+position = Vector2( 200.083, 145.219 )
+scale = Vector2( 1, 1 )
+
+[node name="ContainerC" parent="AreaContainers" instance=ExtResource( 4 )]
+position = Vector2( 902.296, 276.023 )
+rotation = 0.785398
+scale = Vector2( 1, 1 )
+
+[node name="ContainerC2" parent="AreaContainers" instance=ExtResource( 4 )]
+position = Vector2( 284.607, 180.12 )
+rotation = 0.785398
+scale = Vector2( 1, 1 )
+
+[node name="ContainerC3" parent="AreaContainers" instance=ExtResource( 4 )]
+position = Vector2( 539.538, 575.87 )
+rotation = 1.5708
+scale = Vector2( 1, 1 )
+
+[node name="ContainerD" parent="AreaContainers" instance=ExtResource( 2 )]
+position = Vector2( 949.824, 483.23 )
+scale = Vector2( 1, 1 )
+
+[node name="ContainerD3" parent="AreaContainers" instance=ExtResource( 2 )]
+position = Vector2( 215.382, 536.644 )
+rotation = 1.5708
+scale = Vector2( 1, 1 )
+
+[node name="ContainerD4" parent="AreaContainers" instance=ExtResource( 2 )]
+position = Vector2( 215.382, 410.392 )
+rotation = 1.5708
+scale = Vector2( 1, 1 )
+
+[node name="ContainerD2" parent="AreaContainers" instance=ExtResource( 2 )]
+position = Vector2( 951.038, 329.057 )
+scale = Vector2( 1, 1 )
