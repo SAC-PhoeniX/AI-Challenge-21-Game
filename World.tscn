@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://tileset3.png" type="Texture" id=1]
 [ext_resource path="res://ContainerD.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://TankA.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Stark.otf" type="DynamicFontData" id=8]
 [ext_resource path="res://blackarea.png" type="Texture" id=9]
+[ext_resource path="res://time.gd" type="Script" id=10]
 
 [sub_resource type="DynamicFont" id=1]
 size = 36
@@ -276,6 +277,7 @@ custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "120"
 align = 1
 valign = 1
+script = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
