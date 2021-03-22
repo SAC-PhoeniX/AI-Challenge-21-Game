@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gameoverscene.png-7ddad0e6879ece7e889e118a3b078e18.stex"
+path="res://.import/bullet.png-c578fb1c05999a19e103789b171d0954.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gameoverscene.png"
-dest_files=[ "res://.import/gameoverscene.png-7ddad0e6879ece7e889e118a3b078e18.stex" ]
+source_file="res://image_resources/bullet.png"
+dest_files=[ "res://.import/bullet.png-c578fb1c05999a19e103789b171d0954.stex" ]
 
 [params]
 

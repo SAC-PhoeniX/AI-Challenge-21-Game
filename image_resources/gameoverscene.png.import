@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/grayarea.png-c44388a7e25f24b74b2a9017670e8f81.stex"
+path="res://.import/gameoverscene.png-5fcd8416d6d99ee927a6d168781d1a3d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://grayarea.png"
-dest_files=[ "res://.import/grayarea.png-c44388a7e25f24b74b2a9017670e8f81.stex" ]
+source_file="res://image_resources/gameoverscene.png"
+dest_files=[ "res://.import/gameoverscene.png-5fcd8416d6d99ee927a6d168781d1a3d.stex" ]
 
 [params]
 

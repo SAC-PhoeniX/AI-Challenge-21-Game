@@ -1,6 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Container_D.png" type="Texture" id=1]
+[ext_resource path="res://image_resources/Container_D.png" type="Texture" id=1]
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 127.274, 62.9048 )

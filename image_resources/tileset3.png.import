@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Container_C.png-182d3b9f8dbde5824cd55110516ad30e.stex"
+path="res://.import/tileset3.png-beac226b04aa6ee1beac141ec494320a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Container_C.png"
-dest_files=[ "res://.import/Container_C.png-182d3b9f8dbde5824cd55110516ad30e.stex" ]
+source_file="res://image_resources/tileset3.png"
+dest_files=[ "res://.import/tileset3.png-beac226b04aa6ee1beac141ec494320a.stex" ]
 
 [params]
 
