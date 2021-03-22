@@ -18,4 +18,5 @@ func _process(delta):
 	self.text = str(time_remaining)
 
 	if time_remaining < 1:
-		pass
+		get_tree().change_scene("res://GameOver.tscn")
+

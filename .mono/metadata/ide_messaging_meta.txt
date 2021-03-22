@@ -1,2 +1,2 @@
-﻿56255
+﻿56484
 /Users/cihan/Desktop/Godot.app/Contents/MacOS/Godot

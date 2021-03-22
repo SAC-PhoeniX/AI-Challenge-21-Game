@@ -42,6 +42,7 @@ func _process(delta):
 	for i in get_slide_count():
 		var collision = get_slide_collision(i)
 		if "Projectile" in collision.collider.name:
+			Global.TeamBScore += 1
 			for child in get_tree().get_root().get_children():
 				if "Projectile" in child.name:
 					child.queue_free()
@@ -51,7 +52,7 @@ func _process(delta):
 					if "TankB" in m_child.name:
 						m_child.set_global_position(Vector2(1150, 200))
 					if ("teamBscore" in m_child.name):
-						m_child.text = str(int(m_child.text)+1)
+						m_child.text = str(Global.TeamBScore)
 
 
 func shoot():
