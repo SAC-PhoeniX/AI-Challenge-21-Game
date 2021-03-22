@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://StartScene.png" type="Texture" id=1]
 [ext_resource path="res://Stark.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://StartScene.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 27
@@ -11,17 +12,51 @@ font_data = ExtResource( 2 )
 size = 30
 font_data = ExtResource( 2 )
 
-[node name="Node2D" type="Node2D"]
+[node name="StartScene" type="Node2D"]
+script = ExtResource( 3 )
 
 [node name="StartScene" type="Sprite" parent="."]
 position = Vector2( 640, 360 )
 texture = ExtResource( 1 )
+
+[node name="TeamANameInput" type="TextEdit" parent="."]
+margin_left = 486.352
+margin_top = 442.141
+margin_right = 730.352
+margin_bottom = 482.141
+custom_fonts/font = SubResource( 1 )
+text = " "
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="TeamBNameInput" type="TextEdit" parent="."]
 margin_left = 486.344
 margin_top = 266.0
 margin_right = 730.344
 margin_bottom = 306.0
+custom_fonts/font = SubResource( 1 )
+text = " "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TeamAConnectInput" type="TextEdit" parent="."]
+margin_left = 486.344
+margin_top = 520.141
+margin_right = 730.344
+margin_bottom = 560.141
+custom_fonts/font = SubResource( 1 )
+text = " "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TeamBConnectInput" type="TextEdit" parent="."]
+margin_left = 486.344
+margin_top = 344.0
+margin_right = 730.344
+margin_bottom = 384.0
 custom_fonts/font = SubResource( 1 )
 text = " "
 __meta__ = {
@@ -39,17 +74,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TeamANameInput" type="TextEdit" parent="."]
-margin_left = 486.352
-margin_top = 442.141
-margin_right = 730.352
-margin_bottom = 482.141
-custom_fonts/font = SubResource( 1 )
-text = " "
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="TeamBNameLabel" type="Label" parent="."]
 margin_left = 486.344
 margin_top = 228.0
@@ -61,17 +85,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TeamBConnectInput" type="TextEdit" parent="."]
-margin_left = 486.344
-margin_top = 344.0
-margin_right = 730.344
-margin_bottom = 384.0
-custom_fonts/font = SubResource( 1 )
-text = " "
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="TeamBConnectLabel" type="Label" parent="."]
 margin_left = 486.344
 margin_top = 306.0
@@ -79,17 +92,6 @@ margin_right = 730.344
 margin_bottom = 345.0
 custom_fonts/font = SubResource( 2 )
 text = "Connection"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TeamAConnectInput" type="TextEdit" parent="."]
-margin_left = 486.344
-margin_top = 520.141
-margin_right = 730.344
-margin_bottom = 560.141
-custom_fonts/font = SubResource( 1 )
-text = " "
 __meta__ = {
 "_edit_use_anchors_": false
 }

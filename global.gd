@@ -1,5 +1,7 @@
 extends Node
 
+var TeamAName = ""
+var TeamBName = ""
 var TeamAScore = 0
 var TeamBScore = 0
 
