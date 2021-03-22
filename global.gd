@@ -2,6 +2,8 @@ extends Node
 
 var TeamAName = ""
 var TeamBName = ""
+var TeamANumber = ""
+var TeamBNumber = ""
 var TeamAScore = 0
 var TeamBScore = 0
 

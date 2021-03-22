@@ -16,6 +16,11 @@ var pos_x = 100
 var pos1_y = 200
 var pos2_y = 620
 
+var score_time_start
+
+func _ready():
+	score_time_start = OS.get_unix_time()
+
 func get_input():
 	rotation_dir = 0
 	velocity = Vector2()
@@ -37,12 +42,9 @@ func _process(delta):
 	get_input()
 	rotation += rotation_dir * rotation_speed * delta
 	velocity = move_and_slide(velocity, Vector2.UP, false, 4, PI/4, false)
-	
-
 	for i in get_slide_count():
 		var collision = get_slide_collision(i)
 		if "Projectile" in collision.collider.name:
-			Global.TeamBScore += 1
 			for child in get_tree().get_root().get_children():
 				if "Projectile" in child.name:
 					child.queue_free()
@@ -51,8 +53,10 @@ func _process(delta):
 						m_child.set_global_position(Vector2(100, 200))
 					if "TankB" in m_child.name:
 						m_child.set_global_position(Vector2(1150, 200))
-					if ("teamBscore" in m_child.name):
+					if ("teamBscore" in m_child.name) and ((OS.get_unix_time()-score_time_start) >= 1):
+						Global.TeamBScore += 1
 						m_child.text = str(Global.TeamBScore)
+						score_time_start = OS.get_unix_time()
 
 
 func shoot():
