@@ -17,10 +17,10 @@ func _process(delta):
 	for child in self.get_children():
 		if "TankA" in child.name:
 			var degreerotation = -int(child.rotation * 180 / PI)
-			tankA = {"x":str(int(child.position.x)), "y":str(int(child.position.y)), "r": str(degreerotation)}
+			tankA = {"x":str(int(child.position.x)), "y":str(int(child.position.y)), "r": str(degreerotation), "can_fire":Global.TeamACanFire}
 		if "TankB" in child.name:
 			var degreerotation = -int(child.rotation * 180 / PI)
-			tankB = {"x":str(int(child.position.x)), "y":str(int(child.position.y)), "r": str(degreerotation)}
+			tankB = {"x":str(int(child.position.x)), "y":str(int(child.position.y)), "r": str(degreerotation), "can_fire":Global.TeamBCanFire}
 	var projectile_n = 0
 	for child in get_tree().get_root().get_children():
 		if "Projectile" in child.name:
@@ -35,5 +35,5 @@ func _make_post_request(url, data_to_send, use_ssl):
 	var query = JSON.print(data_to_send)
 
 	# Add 'Content-Type' header:
-	var headers = ["Content-Type: text/html", "Content-Length: "+str(query.length())]
-	$HTTPRequest.request(url+"?"+query, headers, use_ssl, HTTPClient.METHOD_POST)
+	var headers = ["Content-Type: application/json", "Content-Length: "+str(query.length())]
+	$HTTPRequest.request(url, headers, use_ssl, HTTPClient.METHOD_POST, query)

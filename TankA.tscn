@@ -3,7 +3,6 @@
 [ext_resource path="res://image_resources/tank_A.png" type="Texture" id=1]
 [ext_resource path="res://TankA.gd" type="Script" id=2]
 
-
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 79.6129, 124.67 )
 
@@ -23,3 +22,5 @@ shape = SubResource( 1 )
 
 [node name="Muzzle" type="Node2D" parent="."]
 position = Vector2( 42.6451, 0.00704288 )
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
