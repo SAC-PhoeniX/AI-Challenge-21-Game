@@ -11,9 +11,9 @@ export var fire_delay = 2
 
 var projectile = load("res://scene_resources/Projectile.tscn")
 
-var pos_x = 1150
 var pos1_y = 200
 var pos2_y = 620
+var rng = RandomNumberGenerator.new()
 
 var score_time_start
 var motor_input = 0
@@ -61,9 +61,19 @@ func _process(delta):
 					child.queue_free()
 				for m_child in child.get_children():
 					if "TankA" in m_child.name:
-						m_child.set_global_position(Vector2(100, 200))
+						rng.randomize()
+						var my_random_number = rng.randi_range(0, 1)
+						if my_random_number == 0:
+							m_child.set_global_position(Vector2(100, pos1_y))
+						else:
+							m_child.set_global_position(Vector2(100, pos2_y))
 					if "TankB" in m_child.name:
-						m_child.set_global_position(Vector2(1150, 200))
+						rng.randomize()
+						var my_random_number = rng.randi_range(0, 1)
+						if my_random_number == 0:
+							m_child.set_global_position(Vector2(1150, pos1_y))
+						else:
+							m_child.set_global_position(Vector2(1150, pos2_y))
 					if ("teamAscore" in m_child.name) and ((OS.get_unix_time()-score_time_start) >= 1):
 						Global.TeamAScore += 1
 						m_child.text = str(Global.TeamAScore)

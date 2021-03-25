@@ -41,28 +41,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TeamANumberInput" type="TextEdit" parent="."]
-margin_left = 486.344
-margin_top = 520.141
-margin_right = 730.344
-margin_bottom = 560.141
-custom_fonts/font = SubResource( 1 )
-text = " "
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TeamBNumberInput" type="TextEdit" parent="."]
-margin_left = 486.344
-margin_top = 344.0
-margin_right = 730.344
-margin_bottom = 384.0
-custom_fonts/font = SubResource( 1 )
-text = " "
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="MapInput" type="TextEdit" parent="."]
 margin_left = 958.693
 margin_top = 267.0
@@ -81,28 +59,6 @@ margin_right = 730.344
 margin_bottom = 267.0
 custom_fonts/font = SubResource( 2 )
 text = "Team Name"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TeamBNumberLabel" type="Label" parent="."]
-margin_left = 486.344
-margin_top = 306.0
-margin_right = 730.344
-margin_bottom = 345.0
-custom_fonts/font = SubResource( 2 )
-text = "Team Number"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TeamANumberLabel" type="Label" parent="."]
-margin_left = 486.344
-margin_top = 482.141
-margin_right = 730.344
-margin_bottom = 521.141
-custom_fonts/font = SubResource( 2 )
-text = "Team Number"
 __meta__ = {
 "_edit_use_anchors_": false
 }
