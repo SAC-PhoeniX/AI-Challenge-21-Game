@@ -4,7 +4,7 @@ export (int) var speed = 100
 export (float) var rotation_speed = 2.5
 
 var velocity = Vector2()
-var rotation_dir = 0
+
 
 export var bullet_speed = 400
 export var fire_delay = 2
@@ -22,17 +22,22 @@ func _ready():
 
 
 func get_input():
-	rotation_dir = 0
+	Global.TeamARotate = 0
+	Global.TeamAMove = 0
+	Global.TeamAFire = 0
 	velocity = Vector2()
 	if Input.is_action_pressed('ui_right'):
-		rotation_dir += 1
+		Global.TeamARotate = 1
 	if Input.is_action_pressed('ui_left'):
-		rotation_dir -= 1
+		Global.TeamARotate = -1
 	if Input.is_action_pressed('ui_up'):
+		Global.TeamAMove = 1
 		velocity = Vector2(speed, 0).rotated(rotation)
 	if Input.is_action_pressed('ui_down'):
+		Global.TeamAMove = -1
 		velocity = Vector2(-speed, 0).rotated(rotation)
 	if (Input.is_action_pressed("ui_select")) and Global.TeamACanFire:
+		Global.TeamAFire = 1
 		shoot()
 		Global.TeamACanFire = false
 		yield(get_tree().create_timer(fire_delay), "timeout")
@@ -40,7 +45,7 @@ func get_input():
 		
 func _process(delta):
 	get_input()
-	rotation += rotation_dir * rotation_speed * delta
+	rotation += Global.TeamARotate * rotation_speed * delta
 	velocity = move_and_slide(velocity, Vector2.UP, false, 4, PI/4, false)
 	for i in get_slide_count():
 		var collision = get_slide_collision(i)

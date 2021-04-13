@@ -25,27 +25,32 @@ func _ready():
 
 	
 func get_input():
-	rotation_dir = 0
+	Global.TeamBRotate = 0
+	Global.TeamBMove = 0
+	Global.TeamBFire = 0
 	velocity = Vector2()
 	if Input.is_action_pressed('d'):
-		rotation_dir += 1
+		Global.TeamBRotate = 1
 	if Input.is_action_pressed('a'):
-		rotation_dir -= 1
+		Global.TeamBRotate = -1
 	if Input.is_action_pressed('w'):
+		Global.TeamBMove = 1
 		velocity = Vector2(speed, 0).rotated(rotation)
 	if Input.is_action_pressed('s'):
+		Global.TeamBMove = -1
 		velocity = Vector2(-speed, 0).rotated(rotation)
 	if (Input.is_action_pressed("q")) and Global.TeamBCanFire:
+		Global.TeamBFire = 1
 		shoot()
 		Global.TeamBCanFire = false
 		yield(get_tree().create_timer(fire_delay), "timeout")
 		Global.TeamBCanFire = true
-		
+
 func _process(delta):
 	get_input()
-	rotation += rotation_dir * rotation_speed * delta
+	rotation += Global.TeamBRotate * rotation_speed * delta
 	velocity = move_and_slide(velocity, Vector2.UP, false, 4, PI/4, false)
-	
+
 	for i in get_slide_count():
 		var collision = get_slide_collision(i)
 		if "Projectile" in collision.collider.name:
