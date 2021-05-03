@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="tank"
+config/name="PhX Tank Game"
 run/main_scene="res://StartScene.tscn"
 config/icon="res://icon.png"
 
