@@ -5,7 +5,7 @@
 [sub_resource type="CircleShape2D" id=1]
 radius = 61.0818
 
-[node name="BarrellA" type="Node2D"]
+[node name="BarrellA" type="StaticBody2D"]
 
 [node name="Barell_01" type="Sprite" parent="."]
 scale = Vector2( 0.3, 0.3 )
