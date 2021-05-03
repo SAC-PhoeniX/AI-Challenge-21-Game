@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 360.466, 148.366 )
 
-[node name="CarB" type="Node2D"]
+[node name="CarB" type="StaticBody2D"]
 
 [node name="car2" type="Sprite" parent="."]
 position = Vector2( 6.70766e-07, 0.185295 )

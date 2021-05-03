@@ -26,7 +26,6 @@ texture = ExtResource( 9 )
 
 [node name="tileset2" type="Sprite" parent="tileset1"]
 position = Vector2( 2062.88, 30.3774 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 9 )
 
 [node name="SideContainers" type="Node2D" parent="."]

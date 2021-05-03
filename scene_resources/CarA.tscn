@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 360.466, 148.366 )
 
-[node name="CarA" type="Node2D"]
+[node name="CarA" type="StaticBody2D"]
 
 [node name="car1" type="Sprite" parent="."]
 rotation = -1.5708
