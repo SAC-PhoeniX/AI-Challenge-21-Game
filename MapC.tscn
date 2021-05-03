@@ -1,0 +1,305 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://TankA.tscn" type="PackedScene" id=1]
+[ext_resource path="res://image_resources/tileset4.png" type="Texture" id=2]
+[ext_resource path="res://scene_resources/ContainerA.tscn" type="PackedScene" id=3]
+[ext_resource path="res://TankB.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scene_resources/BarrellA.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Stark.otf" type="DynamicFontData" id=7]
+[ext_resource path="res://image_resources/blackarea.png" type="Texture" id=8]
+[ext_resource path="res://time.gd" type="Script" id=10]
+[ext_resource path="res://MapA.gd" type="Script" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+size = 36
+font_data = ExtResource( 7 )
+
+[node name="World" type="Node2D"]
+script = ExtResource( 11 )
+
+[node name="tileset4" type="Sprite" parent="."]
+position = Vector2( 639.53, 471.938 )
+scale = Vector2( 0.988127, 0.988128 )
+texture = ExtResource( 2 )
+
+[node name="SideContainers" type="Node2D" parent="."]
+position = Vector2( 128.915, 106.215 )
+z_index = 1
+
+[node name="ContainerA10" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 56.332, 613.317 )
+
+[node name="ContainerA28" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( -70.1838, 613.733 )
+
+[node name="ContainerA11" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 183.332, 613.317 )
+
+[node name="ContainerA12" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 309.902, 613.317 )
+
+[node name="ContainerA13" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 436.902, 613.317 )
+
+[node name="ContainerA14" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 564.547, 613.317 )
+
+[node name="ContainerA15" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 691.547, 613.317 )
+
+[node name="ContainerA16" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 818.117, 613.317 )
+
+[node name="ContainerA17" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 945.117, 613.317 )
+
+[node name="ContainerA29" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 1072.41, 613.317 )
+
+[node name="ContainerA30" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 127.629, -14.0987 )
+
+[node name="ContainerA31" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 1.1134, -13.6822 )
+
+[node name="ContainerA40" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( -123.657, -13.6822 )
+
+[node name="ContainerA32" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 254.629, -14.0987 )
+
+[node name="ContainerA33" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 381.199, -14.0987 )
+
+[node name="ContainerA34" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 508.199, -14.0987 )
+
+[node name="ContainerA35" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 635.844, -14.0987 )
+
+[node name="ContainerA36" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 762.844, -14.0987 )
+
+[node name="ContainerA37" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 889.414, -14.0987 )
+
+[node name="ContainerA38" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 1016.41, -14.0987 )
+
+[node name="ContainerA39" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 1143.71, -14.0987 )
+
+[node name="ContainerA18" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 1149.52, 652.298 )
+rotation = 1.5708
+
+[node name="ContainerA19" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 1149.58, 525.707 )
+rotation = 1.5708
+
+[node name="ContainerA20" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 1149.97, 398.634 )
+rotation = 1.5708
+
+[node name="ContainerA21" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 1150.03, 272.042 )
+rotation = 1.5708
+
+[node name="ContainerA22" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 1150.03, 145.474 )
+rotation = 1.5708
+
+[node name="ContainerA42" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( 1150.03, 17.8873 )
+rotation = 1.5708
+
+[node name="ContainerA23" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( -128.915, 652.126 )
+rotation = 1.5708
+
+[node name="ContainerA24" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( -128.915, 525.054 )
+rotation = 1.5708
+
+[node name="ContainerA25" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( -128.915, 398.365 )
+rotation = 1.5708
+
+[node name="ContainerA26" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( -128.915, 271.774 )
+rotation = 1.5708
+
+[node name="ContainerA27" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( -128.915, 145.205 )
+rotation = 1.5708
+
+[node name="ContainerA41" parent="SideContainers" instance=ExtResource( 3 )]
+position = Vector2( -128.915, 18.6273 )
+rotation = 1.5708
+
+[node name="TankA" parent="." instance=ExtResource( 1 )]
+position = Vector2( 100, 620 )
+z_index = 2
+
+[node name="TankB" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1150, 200 )
+rotation = 3.14159
+z_index = 2
+
+[node name="AreaContainers" type="Node2D" parent="."]
+position = Vector2( 128.915, 106.215 )
+z_index = 2
+
+[node name="BarrellA" parent="AreaContainers" instance=ExtResource( 5 )]
+position = Vector2( 238.262, 38.2629 )
+scale = Vector2( 0.988127, 0.988128 )
+
+[node name="BarrellA2" parent="AreaContainers" instance=ExtResource( 5 )]
+position = Vector2( 238.262, 194.94 )
+scale = Vector2( 0.988127, 0.988128 )
+
+[node name="BarrellA5" parent="AreaContainers" instance=ExtResource( 5 )]
+position = Vector2( 417.426, 108.972 )
+scale = Vector2( 0.988127, 0.988128 )
+
+[node name="BarrellA6" parent="AreaContainers" instance=ExtResource( 5 )]
+position = Vector2( 417.426, 279.644 )
+scale = Vector2( 0.988127, 0.988128 )
+
+[node name="BarrellA7" parent="AreaContainers" instance=ExtResource( 5 )]
+position = Vector2( 417.426, 460.431 )
+scale = Vector2( 0.988127, 0.988128 )
+
+[node name="BarrellA19" parent="AreaContainers" instance=ExtResource( 5 )]
+position = Vector2( 71.308, 108.972 )
+scale = Vector2( 0.988127, 0.988128 )
+
+[node name="BarrellA20" parent="AreaContainers" instance=ExtResource( 5 )]
+position = Vector2( 71.308, 279.644 )
+scale = Vector2( 0.988127, 0.988128 )
+
+[node name="BarrellA21" parent="AreaContainers" instance=ExtResource( 5 )]
+position = Vector2( 71.308, 460.431 )
+scale = Vector2( 0.988127, 0.988128 )
+
+[node name="BarrellA3" parent="AreaContainers" instance=ExtResource( 5 )]
+position = Vector2( 238.262, 374.14 )
+scale = Vector2( 0.988127, 0.988128 )
+
+[node name="BarrellA4" parent="AreaContainers" instance=ExtResource( 5 )]
+position = Vector2( 238.262, 558.237 )
+scale = Vector2( 0.988127, 0.988128 )
+
+[node name="BarrellA8" parent="AreaContainers" instance=ExtResource( 5 )]
+position = Vector2( 610.379, 38.2629 )
+scale = Vector2( 0.988127, 0.988128 )
+
+[node name="BarrellA9" parent="AreaContainers" instance=ExtResource( 5 )]
+position = Vector2( 610.379, 194.94 )
+scale = Vector2( 0.988127, 0.988128 )
+
+[node name="BarrellA10" parent="AreaContainers" instance=ExtResource( 5 )]
+position = Vector2( 792.794, 108.972 )
+scale = Vector2( 0.988127, 0.988128 )
+
+[node name="BarrellA11" parent="AreaContainers" instance=ExtResource( 5 )]
+position = Vector2( 792.794, 279.644 )
+scale = Vector2( 0.988127, 0.988128 )
+
+[node name="BarrellA12" parent="AreaContainers" instance=ExtResource( 5 )]
+position = Vector2( 792.794, 460.431 )
+scale = Vector2( 0.988127, 0.988128 )
+
+[node name="BarrellA13" parent="AreaContainers" instance=ExtResource( 5 )]
+position = Vector2( 610.379, 374.14 )
+scale = Vector2( 0.988127, 0.988128 )
+
+[node name="BarrellA14" parent="AreaContainers" instance=ExtResource( 5 )]
+position = Vector2( 610.379, 558.237 )
+scale = Vector2( 0.988127, 0.988128 )
+
+[node name="BarrellA16" parent="AreaContainers" instance=ExtResource( 5 )]
+position = Vector2( 992.247, 194.94 )
+scale = Vector2( 0.988127, 0.988128 )
+
+[node name="BarrellA17" parent="AreaContainers" instance=ExtResource( 5 )]
+position = Vector2( 992.247, 374.14 )
+scale = Vector2( 0.988127, 0.988128 )
+
+[node name="blackarea" type="Sprite" parent="."]
+position = Vector2( 631.981, 36.373 )
+scale = Vector2( 1.21293, 0.446459 )
+texture = ExtResource( 8 )
+
+[node name="teamAname" type="Label" parent="."]
+margin_left = 168.0
+margin_right = 354.0
+margin_bottom = 61.0
+rect_pivot_offset = Vector2( 172.212, -433.975 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.211765, 0.92549, 1, 1 )
+text = "TEAM A"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="teamBname" type="Label" parent="."]
+margin_left = 891.782
+margin_top = -0.436493
+margin_right = 1077.78
+margin_bottom = 60.5635
+rect_pivot_offset = Vector2( 172.212, -433.975 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 0.619608, 0.211765, 1 )
+text = "TEAM B"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="teamAscore" type="Label" parent="."]
+margin_left = 100.691
+margin_right = 167.691
+margin_bottom = 61.0
+rect_pivot_offset = Vector2( 172.212, -433.975 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.211765, 0.92549, 1, 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="teamBscore" type="Label" parent="."]
+margin_left = 1082.33
+margin_right = 1149.33
+margin_bottom = 61.0
+rect_pivot_offset = Vector2( 172.212, -433.975 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 0.619608, 0.211765, 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="time" type="Label" parent="."]
+margin_left = 580.0
+margin_right = 700.0
+margin_bottom = 60.0
+rect_pivot_offset = Vector2( 172, -434 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "120"
+align = 1
+valign = 1
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]

@@ -20,7 +20,6 @@ var score_time_start
 func _ready():
 	score_time_start = OS.get_unix_time()
 
-
 func get_input():
 	Global.TeamARotate = 0
 	Global.TeamAMove = 0
