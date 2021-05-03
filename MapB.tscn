@@ -1,0 +1,484 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://TankA.tscn" type="PackedScene" id=1]
+[ext_resource path="res://TankB.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Stark.otf" type="DynamicFontData" id=7]
+[ext_resource path="res://image_resources/blackarea.png" type="Texture" id=8]
+[ext_resource path="res://image_resources/tileset1.png" type="Texture" id=9]
+[ext_resource path="res://time.gd" type="Script" id=10]
+[ext_resource path="res://MapA.gd" type="Script" id=11]
+[ext_resource path="res://scene_resources/CarA.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scene_resources/CarB.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scene_resources/CarC.tscn" type="PackedScene" id=14]
+[ext_resource path="res://scene_resources/CarD.tscn" type="PackedScene" id=15]
+
+[sub_resource type="DynamicFont" id=1]
+size = 36
+font_data = ExtResource( 7 )
+
+[node name="World" type="Node2D"]
+script = ExtResource( 11 )
+
+[node name="tileset1" type="Sprite" parent="."]
+position = Vector2( 384.466, 396.549 )
+scale = Vector2( 0.395143, 0.395143 )
+texture = ExtResource( 9 )
+
+[node name="tileset2" type="Sprite" parent="tileset1"]
+position = Vector2( 2062.88, 30.3774 )
+scale = Vector2( 1, 1 )
+texture = ExtResource( 9 )
+
+[node name="SideContainers" type="Node2D" parent="."]
+position = Vector2( 124.915, 111.215 )
+z_index = 1
+
+[node name="CarA2" parent="SideContainers" instance=ExtResource( 12 )]
+position = Vector2( -123.124, 500.264 )
+rotation = -1.5708
+
+[node name="CarB" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( -123.298, 350.581 )
+rotation = 1.5708
+
+[node name="CarB2" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( -123.139, 574.906 )
+rotation = -1.5708
+
+[node name="CarC" parent="SideContainers" instance=ExtResource( 14 )]
+position = Vector2( -122.327, 279.376 )
+rotation = -1.5708
+
+[node name="CarA3" parent="SideContainers" instance=ExtResource( 12 )]
+position = Vector2( -122.863, 133.498 )
+rotation = -1.5708
+
+[node name="CarB3" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( -123.037, -16.1845 )
+rotation = 1.5708
+
+[node name="CarB4" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( -122.878, 207.14 )
+rotation = -1.5708
+
+[node name="CarB5" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 221.216, -37.7832 )
+
+[node name="CarC2" parent="SideContainers" instance=ExtResource( 14 )]
+position = Vector2( 72.5438, -36.5491 )
+
+[node name="CarA4" parent="SideContainers" instance=ExtResource( 12 )]
+position = Vector2( -71.9961, -37.3872 )
+
+[node name="CarB6" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 1.47256, -37.4734 )
+
+[node name="CarC21" parent="SideContainers" instance=ExtResource( 14 )]
+position = Vector2( 366.017, 606.158 )
+
+[node name="CarA10" parent="SideContainers" instance=ExtResource( 12 )]
+position = Vector2( 221.536, 607.221 )
+
+[node name="CarB12" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 295.005, 607.135 )
+
+[node name="CarC3" parent="SideContainers" instance=ExtResource( 14 )]
+position = Vector2( 365.547, -36.5491 )
+rotation = 3.14159
+
+[node name="CarB7" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 294.475, -37.4734 )
+rotation = 3.14159
+
+[node name="CarC38" parent="SideContainers" instance=ExtResource( 14 )]
+position = Vector2( 541.83, 262.791 )
+rotation = 3.14159
+
+[node name="CarB25" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 468.759, 263.867 )
+rotation = 3.14159
+
+[node name="CarC4" parent="SideContainers" instance=ExtResource( 14 )]
+position = Vector2( 660.237, -36.5491 )
+
+[node name="CarC5" parent="SideContainers" instance=ExtResource( 14 )]
+position = Vector2( 960.297, -37.4752 )
+rotation = 3.14159
+
+[node name="CarC6" parent="SideContainers" instance=ExtResource( 14 )]
+position = Vector2( 1029.76, -37.5139 )
+rotation = 3.14159
+
+[node name="CarA5" parent="SideContainers" instance=ExtResource( 12 )]
+position = Vector2( 515.697, -37.3872 )
+
+[node name="CarB8" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 589.166, -37.4734 )
+
+[node name="CarA6" parent="SideContainers" instance=ExtResource( 12 )]
+position = Vector2( 887.475, -37.7296 )
+
+[node name="CarA7" parent="SideContainers" instance=ExtResource( 12 )]
+position = Vector2( 1101.24, -36.8291 )
+
+[node name="CarC7" parent="SideContainers" instance=ExtResource( 14 )]
+position = Vector2( -74.3384, 605.724 )
+
+[node name="CarC8" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( -122.328, 425.732 )
+rotation = -1.5708
+
+[node name="CarA12" parent="SideContainers" instance=ExtResource( 12 )]
+position = Vector2( 1153.46, 141.973 )
+rotation = -1.5708
+
+[node name="CarB17" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 1153.44, 216.614 )
+rotation = -1.5708
+
+[node name="CarC24" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( 1152.82, 67.4401 )
+rotation = -1.5708
+
+[node name="CarB15" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 1153.16, 508.469 )
+rotation = 1.5708
+
+[node name="CarC22" parent="SideContainers" instance=ExtResource( 14 )]
+position = Vector2( 1152.13, 437.263 )
+rotation = -1.5708
+
+[node name="CarC25" parent="SideContainers" instance=ExtResource( 14 )]
+position = Vector2( 1152.78, -5.37441 )
+rotation = -1.5708
+
+[node name="CarA11" parent="SideContainers" instance=ExtResource( 12 )]
+position = Vector2( 1153.59, 291.386 )
+rotation = -1.5708
+
+[node name="CarB18" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 549.795, 112.382 )
+rotation = -1.5708
+
+[node name="CarA13" parent="SideContainers" instance=ExtResource( 12 )]
+position = Vector2( 587.17, 111.902 )
+rotation = -1.5708
+
+[node name="CarB16" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 1153.58, 365.027 )
+rotation = -1.5708
+
+[node name="CarC23" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( 1152.13, 583.619 )
+rotation = -1.5708
+
+[node name="CarC9" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( -122.067, 57.9661 )
+rotation = -1.5708
+
+[node name="CarA18" parent="SideContainers" instance=ExtResource( 12 )]
+position = Vector2( 788.54, 550.786 )
+rotation = -1.5708
+
+[node name="CarB31" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 788.366, 401.103 )
+rotation = 1.5708
+
+[node name="CarC43" parent="SideContainers" instance=ExtResource( 14 )]
+position = Vector2( 914.133, 379.253 )
+
+[node name="CarA19" parent="SideContainers" instance=ExtResource( 12 )]
+position = Vector2( 839.407, 379.9 )
+
+[node name="CarB32" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 841.576, 415.463 )
+
+[node name="CarC44" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( 789.336, 475.253 )
+rotation = -1.5708
+
+[node name="CarC27" parent="SideContainers" instance=ExtResource( 14 )]
+position = Vector2( 477.797, 111.38 )
+rotation = -1.5708
+
+[node name="CarC28" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( 512.045, 114.288 )
+rotation = -1.5708
+
+[node name="CarB19" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 407.7, 113.812 )
+rotation = -1.5708
+
+[node name="CarA14" parent="SideContainers" instance=ExtResource( 12 )]
+position = Vector2( 445.075, 113.332 )
+rotation = -1.5708
+
+[node name="CarC29" parent="SideContainers" instance=ExtResource( 14 )]
+position = Vector2( 335.702, 112.81 )
+rotation = -1.5708
+
+[node name="CarC30" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( 369.95, 115.718 )
+rotation = -1.5708
+
+[node name="CarB20" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 262.967, 115.152 )
+rotation = -1.5708
+
+[node name="CarA15" parent="SideContainers" instance=ExtResource( 12 )]
+position = Vector2( 300.342, 114.672 )
+rotation = -1.5708
+
+[node name="CarB21" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 117.53, 116.191 )
+rotation = -1.5708
+
+[node name="CarA16" parent="SideContainers" instance=ExtResource( 12 )]
+position = Vector2( 154.905, 115.711 )
+rotation = -1.5708
+
+[node name="CarA17" parent="SideContainers" instance=ExtResource( 12 )]
+position = Vector2( 81.1483, 115.711 )
+rotation = -1.5708
+
+[node name="CarC31" parent="SideContainers" instance=ExtResource( 14 )]
+position = Vector2( 190.969, 114.15 )
+rotation = -1.5708
+
+[node name="CarC32" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( 225.217, 117.058 )
+rotation = -1.5708
+
+[node name="CarC10" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( 145.766, -36.875 )
+rotation = -3.14159
+
+[node name="CarC11" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( 439.405, -36.3901 )
+
+[node name="CarB9" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 515.24, 607.276 )
+
+[node name="CarC15" parent="SideContainers" instance=ExtResource( 14 )]
+position = Vector2( 660.551, 605.856 )
+rotation = 3.14159
+
+[node name="CarB10" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 589.153, 606.893 )
+rotation = 3.14159
+
+[node name="CarB13" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 1027.25, 606.949 )
+
+[node name="CarB14" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 1101.16, 606.566 )
+rotation = 3.14159
+
+[node name="CarB22" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 593.317, 284.532 )
+rotation = 1.5708
+
+[node name="CarC37" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( 592.287, 359.682 )
+rotation = -1.5708
+
+[node name="CarC41" parent="SideContainers" instance=ExtResource( 14 )]
+position = Vector2( 100.185, 171.345 )
+rotation = 3.14159
+
+[node name="CarB30" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 151.672, 193.085 )
+rotation = 1.5708
+
+[node name="CarC42" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( 150.642, 268.236 )
+rotation = -1.5708
+
+[node name="CarB33" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 58.0687, 473.896 )
+rotation = 1.5708
+
+[node name="CarC45" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( 57.0387, 549.046 )
+rotation = -1.5708
+
+[node name="CarB23" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 437.556, 383.247 )
+
+[node name="CarB24" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 541.318, 382.629 )
+rotation = 3.14159
+
+[node name="CarC39" parent="SideContainers" instance=ExtResource( 14 )]
+position = Vector2( 364.473, 383.24 )
+rotation = 3.14159
+
+[node name="CarB26" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 290.708, 384.662 )
+rotation = 3.14159
+
+[node name="CarB27" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 520.703, 435.701 )
+rotation = 1.5708
+
+[node name="CarC40" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( 489.842, 406.583 )
+rotation = -1.5708
+
+[node name="CarB28" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 289.7, 456.787 )
+
+[node name="CarB34" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 736.149, 469.113 )
+
+[node name="CarB29" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 289.821, 420.739 )
+rotation = 3.14159
+
+[node name="CarC16" parent="SideContainers" instance=ExtResource( 14 )]
+position = Vector2( 955.405, 605.856 )
+
+[node name="CarA8" parent="SideContainers" instance=ExtResource( 12 )]
+position = Vector2( 809.884, 607.143 )
+
+[node name="CarB11" parent="SideContainers" instance=ExtResource( 13 )]
+position = Vector2( 883.68, 607.056 )
+
+[node name="CarC17" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( 439.953, 606.347 )
+rotation = -3.14159
+
+[node name="CarC18" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( 733.756, 606.178 )
+
+[node name="CarC12" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( 733.459, -36.875 )
+rotation = -3.14159
+
+[node name="CarC13" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( 811.183, -36.7325 )
+
+[node name="CarC14" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( 878.177, 36.8203 )
+rotation = 3.49066
+
+[node name="CarC26" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( 877.542, 2.17767 )
+rotation = 3.49066
+
+[node name="CarC33" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( 880.392, 106.592 )
+rotation = 3.49066
+
+[node name="CarC34" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( 879.753, 72.2837 )
+rotation = 3.49066
+
+[node name="CarC35" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( 882.292, 177.298 )
+rotation = 3.49066
+
+[node name="CarC36" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( 881.899, 141.559 )
+rotation = 3.49066
+
+[node name="CarC19" parent="SideContainers" instance=ExtResource( 14 )]
+position = Vector2( 148.358, 606.136 )
+rotation = 3.14159
+
+[node name="CarA9" parent="SideContainers" instance=ExtResource( 12 )]
+position = Vector2( 75.5358, 606.882 )
+
+[node name="CarC20" parent="SideContainers" instance=ExtResource( 15 )]
+position = Vector2( -0.755966, 605.879 )
+
+[node name="TankA" parent="." instance=ExtResource( 1 )]
+position = Vector2( 100, 620 )
+z_index = 2
+
+[node name="TankB" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1150, 200 )
+rotation = 3.14159
+z_index = 2
+
+[node name="AreaContainers" type="Node2D" parent="."]
+position = Vector2( 128.915, 106.215 )
+z_index = 2
+
+[node name="blackarea" type="Sprite" parent="."]
+position = Vector2( 631.981, 30.843 )
+scale = Vector2( 1.21293, 0.396863 )
+texture = ExtResource( 8 )
+
+[node name="teamAname" type="Label" parent="."]
+margin_left = 168.0
+margin_right = 354.0
+margin_bottom = 61.0
+rect_pivot_offset = Vector2( 172.212, -433.975 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.211765, 0.92549, 1, 1 )
+text = "TEAM A"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="teamBname" type="Label" parent="."]
+margin_left = 891.782
+margin_top = -0.436493
+margin_right = 1077.78
+margin_bottom = 60.5635
+rect_pivot_offset = Vector2( 172.212, -433.975 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 0.619608, 0.211765, 1 )
+text = "TEAM B"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="teamAscore" type="Label" parent="."]
+margin_left = 100.691
+margin_right = 167.691
+margin_bottom = 61.0
+rect_pivot_offset = Vector2( 172.212, -433.975 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.211765, 0.92549, 1, 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="teamBscore" type="Label" parent="."]
+margin_left = 1082.33
+margin_right = 1149.33
+margin_bottom = 61.0
+rect_pivot_offset = Vector2( 172.212, -433.975 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 0.619608, 0.211765, 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="time" type="Label" parent="."]
+margin_left = 580.0
+margin_right = 700.0
+margin_bottom = 60.0
+rect_pivot_offset = Vector2( 172, -434 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "120"
+align = 1
+valign = 1
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]

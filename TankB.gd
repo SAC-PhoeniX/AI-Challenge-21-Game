@@ -26,9 +26,14 @@ func _ready():
 
 func _on_request_completed(result, response_code, headers, body):
 	var json = JSON.parse(body.get_string_from_utf8())
-	rotation_input = json.result["r"]
-	motor_input = json.result["m"]
-	fire_input = json.result["f"]
+	if (json.result != null):
+		rotation_input = json.result["r"]
+		motor_input = json.result["m"]
+		fire_input = json.result["f"]
+	else:
+		rotation_input = 0
+		motor_input = 0
+		fire_input = 0
 	
 func get_input():
 	rotation_dir = 0

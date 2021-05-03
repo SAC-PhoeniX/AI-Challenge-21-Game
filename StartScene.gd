@@ -9,4 +9,4 @@ func _process(delta):
 		Global.TeamBName = self.get_child(2).text
 		Global.TeamANumber = self.get_child(3).text
 		Global.TeamBNumber = self.get_child(4).text
-		get_tree().change_scene("res://MapA.tscn")
+		get_tree().change_scene("res://MapC.tscn")
