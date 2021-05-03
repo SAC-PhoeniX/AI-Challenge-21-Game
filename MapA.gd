@@ -14,6 +14,8 @@ func _process(delta):
 	var projectiles = {}
 	var tankA = {}
 	var tankB = {}
+	var teamA = {"r":Global.TeamARotate, "m":Global.TeamAMove,"f":Global.TeamAFire}
+	var teamB = {"r":Global.TeamBRotate, "m":Global.TeamBMove,"f":Global.TeamBFire}
 	for child in self.get_children():
 		if "TankA" in child.name:
 			var degreerotation = -int(child.rotation * 180 / PI)
@@ -27,7 +29,7 @@ func _process(delta):
 			var projectile = {"x": str(int(child.position.x)), "y":str(int(child.position.y)), "vx":int(child.linear_velocity.x),"vy":int(child.linear_velocity.y)}
 			projectiles["p"+str(projectile_n)]=projectile
 			projectile_n += 1
-	var dataToSend = {"tankA": tankA, "tankB": tankB, "projectiles":projectiles}
+	var dataToSend = {"tankA": tankA, "tankB": tankB, "projectiles":projectiles, "teamA":teamA, "teamB":teamB}
 	_make_post_request("http://localhost:3000/", dataToSend, false)
 
 func _make_post_request(url, data_to_send, use_ssl):
