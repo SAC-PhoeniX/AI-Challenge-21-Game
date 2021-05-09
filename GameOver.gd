@@ -14,4 +14,7 @@ func _process(delta):
 		Global.TeamBScore = 0
 		Global.TeamANumber = ""
 		Global.TeamBNumber = ""
+		Global.TeamACanFire = true
+		Global.TeamBCanFire = true
+		
 		get_tree().change_scene("res://StartScene.tscn")
