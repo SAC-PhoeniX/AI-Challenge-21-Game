@@ -34,7 +34,7 @@ func _on_request_completed(result, response_code, headers, body):
 		rotation_input = 0
 		motor_input = 0
 		fire_input = 0
-	
+
 func get_input():
 	rotation_dir = 0
 	velocity = Vector2()
